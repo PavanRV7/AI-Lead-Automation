@@ -154,21 +154,22 @@ Main fields include:
 
 ## Project Structure
 
+```text
 AI-Lead-Automation/
-│
 ├── Dashboard/
 │   └── dashboard.pbix
-│
 ├── database/
 │   └── init.sql
-│
 ├── n8n/
 │   └── ai-lead-qualification.json
-│
+├── screenshots/
+│   ├── n8n-workflow.png
+│   └── powerbi-dashboard.png
 ├── .env.example
 ├── .gitignore
 ├── docker-compose.yml
 └── README.md
+```
 
 ## Local Setup
 
