@@ -14,38 +14,22 @@ Power BI connects to the PostgreSQL database to provide an interactive sales int
 
 ## Architecture
 
-Inbound Lead / Webhook
-        │
-        ▼
-      n8n
-        │
-        ▼
-   PostgreSQL
-        │
-        ▼
-   Google Gemini
-        │
-        ▼
- AI Lead Qualification
-        │
-        ├── Hot ──────┐
-        ├── Warm      │
-        └── Cold      │
-                     │
-                     ▼
-          Personalized Email
-                     │
-                     ▼
-                   Gmail
-                     │
-                     ▼
-          Update Lead Status
-                     │
-                     ▼
-               PostgreSQL
-                     │
-                     ▼
-                 Power BI
+```mermaid
+flowchart LR
+    A[Inbound Lead / Webhook] --> B[n8n]
+    B --> C[PostgreSQL]
+    C --> D[Google Gemini]
+    D --> E[AI Lead Qualification]
+    E --> F{Lead Score}
+    F -->|80-100| G[Hot]
+    F -->|50-79| H[Warm]
+    F -->|0-49| I[Cold]
+    G --> J[Personalized Email]
+    J --> K[Gmail]
+    K --> L[Update Lead Status]
+    L --> C
+    C --> M[Power BI]
+```
 
 ## Screenshots
 
@@ -152,7 +136,6 @@ Main fields include:
 - Pain points
 - Recommended action
 - AI summary
-- Estimated value
 - Lead status
 - Email sent timestamp
 - Created and updated timestamps
