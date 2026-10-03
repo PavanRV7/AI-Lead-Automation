@@ -1,0 +1,28 @@
+# Environment variables and secrets
+.env
+
+# n8n local data
+.n8n/
+n8n_data/
+
+# PostgreSQL local data
+postgres_data/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Temporary files
+*.log
+*.tmp
+
+    
