@@ -183,7 +183,7 @@ Install:
 ### 1. Clone the repository
 
 ```bash
-git clone [YOUR-REPOSITORY-URL](https://github.com/PavanRV7/AI-Lead-Automation.git)
+git clone https://github.com/PavanRV7/AI-Lead-Automation.git
 cd AI-Lead-Automation
 ```
 
