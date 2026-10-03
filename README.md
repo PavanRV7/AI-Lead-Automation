@@ -199,8 +199,9 @@ Install:
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR-REPOSITORY-URL
+git clone [YOUR-REPOSITORY-URL](https://github.com/PavanRV7/AI-Lead-Automation.git)
 cd AI-Lead-Automation
+```
 
 ### 2. Configure environment variables
 
