@@ -256,5 +256,6 @@ Status = Contacted
 The project demonstrates how AI, workflow automation, databases, email automation, and business intelligence can be combined into an end-to-end sales automation pipeline.
 It reduces manual lead qualification effort and provides sales teams with structured lead intelligence and automated follow-up.
 
-Author
+
+## Author
 Pavan R V
