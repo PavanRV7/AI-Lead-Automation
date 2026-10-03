@@ -229,6 +229,7 @@ Dashboard/dashboard.pbix
 
 ## Example Lead Flow
 
+```text
 Inbound Lead
      ↓
 Webhook
@@ -248,6 +249,7 @@ Personalized Email
 Gmail
      ↓
 Status = Contacted
+```
 
 ## Project Outcome
 
